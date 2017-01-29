@@ -113,7 +113,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-LISTSHINE_API_BASE = 'http://send.listshine.com/api/v1/'
+LISTSHINE_API_BASE = os.getenv('LISTSHINE_API_BASE', 'http://send.listshine.com/api/v1/')
 
 # define this key to manage listshine connection
-LISTSHINE_API_KEY = ''
+LISTSHINE_API_KEY = os.getenv('LISTSHINE_API_KEY', 'put your key here')
