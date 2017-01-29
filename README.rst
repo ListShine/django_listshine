@@ -18,14 +18,16 @@ API
 ---
 
 1. Subscribing users
-   from django_listshine.listshine.contactlist import LSContact
-   connection = LSContact(list_id=<CONTACT_LIST_UUID>)
-   connection.subscribe(email='test@email', firstname='test')
+
+    from django_listshine.listshine.contactlist import LSContact
+    connection = LSContact(list_id=<CONTACT_LIST_UUID>)
+    connection.subscribe(email='test@email', firstname='test')
 
 2. Unsubscribing users
-   from django_listshine.listshine.contactlist import LSContact
-   connection = LSContact(list_id=<CONTACT_LIST_UUID>)
-   connection.unsubscribe(email='test@email')
+
+    from django_listshine.listshine.contactlist import LSContact
+    connection = LSContact(list_id=<CONTACT_LIST_UUID>)
+    connection.unsubscribe(email='test@email')
 
 
 Merge Vars
@@ -33,21 +35,22 @@ Merge Vars
 
 When you are subscribing contacts you can use merge vars.
 Following merge vars are supported:
-- firstname
-- lastname
-- company
-- website
-- phone
-- address
-- city
-- country
-- custom
-- custom2
-- custom3
-- custom4
+* firstname
+* lastname
+* company
+* website
+* phone
+* address
+* city
+* country
+* custom
+* custom2
+* custom3
+* custom3
 
 Example
 --------
 
 To subscribe contact test@test.com with firstname "name" and lastname "surname"
-connection.subscribe(email='test@test.com', firstname='name', lastname='surname')
+
+    connection.subscribe(email='test@test.com', firstname='name', lastname='surname')
