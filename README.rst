@@ -40,7 +40,6 @@ Following merge vars are supported:
 * company
 * website
 * phone
-* address
 * city
 * country
 * custom
